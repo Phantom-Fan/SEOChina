@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<!--
+Filename: about_people.html
+Created: Sep 25, 2016
+Author: V.L.
+-->
+
+<html lang="zh-CN">
+
+<head>
+  <meta content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>SEO中国主页</title>
+  <link rel="icon" type="image/jpg" href="img/SEO_logo.jpg">
+
+  <!-- link to css style sheet -->
+  <link rel="stylesheet" href="seoStyle.css">
+</head>
+
+<body>
+  <main>
+    <!-- The first div "page_header" is includes the div "navigationbar" to provide
+    a black background for the header part, and set the header in an absolute position in the page.-->
+    <div class="page_header">
+      <!-- The div "navigationbar" inside of "page_header" contains texts and links of five components,
+      including "About Us","Programs","Application", "Donate" and a SEO China
+      logo that directs visitors back to home page. We need this div inside of "page_header"
+      in order to set a relative position of the nav bar in the css document.-->
+      <nav class="navigationbar">
+        <ul class="ul_container">
+            <li class="navitem" id="main_menu">
+                <a href="homepage.html">
+                    首页
+                </a>
+            </li>
+            <li class="navitem dropdown" id="about_menu">
+              <a href="javascript:void(0)" class="dropbtn" onclick="dropDownMenu()">关于我们</a>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="about.html">项目介绍</a>
+                <a href="about_people.html">团队成员</a>
+                <a href="about_campus.html">校园网络</a>
+                <a href="about_company.html">合作企业</a>
+              </div>
+            </li>
+            <li class="navitem" id="programs_menu">
+                <a href="programs.html">
+                    SEO风采
+                </a>
+            </li>
+            <li class="navitem" id="news_menu">
+                <a href="news.html">
+                    新闻中心
+                </a>
+            </li>
+            <li class="navitem" id="participate_menu">
+                <a href="participate.html">
+                    参与SEO
+                </a>
+            </li>
+            <li class="navimage">
+                <a href="homepage.html">
+                    <img src="img/SEO_logo.jpg">
+                </a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+
+      <!-- Following the nav bar is the div that contains a <h1> element that introduces
+    the main purpose of this page.-->
+    <div class="about_title">
+      <h1>团队成员</h1>
+    </div>
+
+    <!-- the div with class "box_people" contains the submenu on the left of the page
+    ,and texts as well as images on the right-->
+    <div class="box_people">
+
+    <!--The "left_menu" aside contains a submenu on the right that directs people
+    to two sections of the "About Us" page: "about.html" and "about_people.html"-->
+          <aside class="left_menu">
+              <div>
+                  <div class="menu_item">
+                      <a href="about.html">项目介绍</a>
+                  </div>
+                  <div class="menu_item">
+                      <a href="about_people.html">团队成员</a>
+                  </div>
+                  <div class="menu_item">
+                      <a href="about_campus.html">校园网络</a>
+                  </div>
+                  <div class="menu_item">
+                      <a href="about_company.html">合作企业</a>
+                  </div>
+              </div>
+          </aside>
+
+      <!-- The div with class "about_people" is the part that includes texts as well as
+    images of SEO China members on the right side of the div "box". -->
+      <div class="about_people">
+            <div class="individual_intro">
+                <div class="img">
+                    <img src="img/about/thomas.jpg" alt="" class="image_intro">
+                    <div class="desc">曹嘉泰 Thomas Tsao</div>
+                </div>
+                <div class="intro_text">
+                  Tom是SEO纽约1991届校友，也是SEO中国的创始人。Tom在1991年还在美国哈佛大学读书的时候参加了SEO纽约项目，获得了在纽约华尔街投资银行实习的机会。2006年回到中国的Tom，秉着回馈SEO、回馈社会的理念，有感于中国社会社会资本分配不均的现状，成立了SEO中国。在过去10年中，Tom和他所创立的国内领先、专注于TMT行业的风险投资机构，戈壁合伙人，一直支持SEO中国，为过百名优秀大学生提供了进入金融领域的机会，并改变了他们的命运。
+                </div>
+            </div>
+            <div class="individual_intro">
+                <div class="img">
+                    <img src="img/about/sj.jpg" alt="" class="image_intro">
+                    <div class="desc">季苏海 Suhai Ji</div>                      
+                </div>
+                <div class="intro_text">
+                  季苏海是SEO纽约1997届校友，并于2001年创立了SEO香港项目，为众多优秀大学生提供了在香港顶尖投行实习的机会。苏海拥有多年投行经验、曾就职纽交所，并两次成功带领中国公司海外IPO。他长期参与SEO中国项目，分享个人职业发展历程，帮助SEO学员成功进入职场。苏海毕业于美国布兰迪斯大学，获得经济学学士，并且是哥伦比亚大学商学院的工商管理学硕士。
+                </div>
+            </div>
+            <div class="individual_intro">
+                <div class="img">
+                    <img src="img/about/hg.jpg" alt="" class="image_intro"> 
+                    <div class="desc">关雪 Helen Guan</div>                
+                </div>
+                <div class="intro_text">
+                  关雪是SEO中国的项目总监，负责管理SEO中国的各项事务。在加入SEO中国前， 关雪曾就职于麦肯锡公司和微软（中国）战略和业务发展部。关雪是SEO纽约2007届校友，有感于SEO中国的社会使命，关雪决定加入SEO中国，成为SEO中国的第一位全职员工。关雪毕业于美国韦尔斯利女子学院，是沃顿商学院的工商管理学硕士和哈佛肯尼迪政府学院的公共管理学硕士。
+                </div>
+            </div>
+            <div class="individual_intro">
+                <div class="img">
+                    <img src="img/about/ny.jpg" alt="" class="image_intro">
+                    <div class="desc">俞凤英 Nancy Yu</div>
+                </div>
+                <div class="intro_text">
+                  Nancy曾就职于戈壁合伙人，并由此接触到SEO中国。十年来，Nancy一直协助SEO项目的运营，目睹了SEO中国从无到有，从发展到壮大的全过程，陪伴一批批校友走出校园，成功走入社会。Nancy毕业于上海财经大学。
+                </div>
+            </div>
+            <div class="individual_intro">
+                <div class="img">
+                    <img src="img/about/hq.jpg" alt="" class="image_intro">
+                    <div class="desc">胡琼 Christine Hu</div>
+                </div>
+                <div class="intro_text">
+                  胡琼是SEO中国的财务总监，负责SEO中国的财务和法务事宜。胡琼曾就职于安永华明会计师事务所，目前就职于光大集团下属的股权投资公司。胡琼是SEO中国2006届校友，毕业于北京大学光华管理学院，拥有中国注册会计师资格，希望利用自己的专业能力帮助SEO中国的运营和发展。
+                </div>
+            </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page_footer">
+      <div>
+          <div class="footer_menu">
+            <ul>
+                <li>
+                    <a href="homepage.html">· SEO首页</a>
+                </li>
+                <li>
+                    <a href="about.html">· 关于我们</a>
+                </li>
+                <li>
+                    <a href="programs.html">· SEO风采</a>
+                </li>
+                <li>
+                    <a href="news.html">· 新闻中心</a>
+                </li>
+                <li>
+                    <a href="participate.html">· 参与SEO</a>
+                </li>
+            </ul>
+          </div>
+
+          <!--The "footer_email" div contains the email address of SEO.-->
+          <div class="footer_email">
+              <span>联系我们:&nbsp;&nbsp;</span>
+              <a href="mailto:contact@seo-china.org" class="footer__email__link">
+                  <span class="ng-binding">seo-china@seo-china.org</span>
+              </a>
+          </div>
+
+          <!--The "footer_email" div contains the email address of SEO.-->
+          <div class="footer_wx">
+              <span>微信公众号:&nbsp;&nbsp;</span>
+                <span class="ng-binding">SEOChina2006</span>
+          </div>
+      </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="seoFunction.js"></script>
+</body>
+</html>

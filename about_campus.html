@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<!--
+Filename: about.html
+Created: Sep 25, 2016
+Author: V.L.
+-->
+
+<html lang="zh-CN">
+
+<head>
+  <meta content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>SEO中国主页</title>
+  <link rel="icon" type="image/jpg" href="img/SEO_logo.jpg">
+
+  <!-- link to css style sheet -->
+  <link rel="stylesheet" href="seoStyle.css">
+</head>
+
+<body>
+  <main>
+    <!-- The first div "page_header" is includes the div "navigationbar" to provide
+    a black background for the header part, and set the header in an absolute position in the page.-->
+    <div class="page_header">
+      <!-- The div "navigationbar" inside of "page_header" contains texts and links of five components,
+      including "About Us","Programs","Application", "Donate" and a SEO China
+      logo that directs visitors back to home page. We need this div inside of "page_header"
+      in order to set a relative position of the nav bar in the css document.-->
+      <nav class="navigationbar">
+        <ul class="ul_container">
+            <li class="navitem" id="main_menu">
+                <a href="homepage.html">
+                    首页
+                </a>
+            </li>
+            <li class="navitem dropdown" id="about_menu">
+              <a href="javascript:void(0)" class="dropbtn" onclick="dropDownMenu()">关于我们</a>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="about.html">项目介绍</a>
+                <a href="about_people.html">团队成员</a>
+                <a href="about_campus.html">校园网络</a>
+                <a href="about_company.html">合作企业</a>
+              </div>
+            </li>
+            <li class="navitem" id="programs_menu">
+                <a href="programs.html">
+                    SEO风采
+                </a>
+            </li>
+            <li class="navitem" id="news_menu">
+                <a href="news.html">
+                    新闻中心
+                </a>
+            </li>
+            <li class="navitem" id="participate_menu">
+                <a href="participate.html">
+                    参与SEO
+                </a>
+            </li>
+            <li class="navimage">
+                <a href="homepage.html">
+                    <img src="img/SEO_logo.jpg">
+                </a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+
+      <!-- Following the nav bar is the div that contains a <h1> element that introduces
+    the main purpose of this page.-->
+      <div class="about_title">
+        <h1>校园网络</h1>
+      </div>
+
+      <!-- Following the <h1> "about_title" section, the following "center" div contains
+      the main content that offers explanations to the purpose of the website.-->
+
+        <!-- the div with class "box" contains the submenu on the left of the page
+        ,and texts as well as images on the right-->
+        <div class="box_campus">
+
+          <!--The "left_menu" aside contains a submenu on the right that directs people
+        to two sections of the "About Us" page: "about.html" and "about_people.html"-->
+          <aside class="left_menu">
+              <div>
+                  <div class="menu_item">
+                      <a href="about.html">项目介绍</a>
+                  </div>
+                  <div class="menu_item">
+                      <a href="about_people.html">团队成员</a>
+                  </div>
+                  <div class="menu_item">
+                      <a href="about_campus.html">校园网络</a>
+                  </div>
+                  <div class="menu_item">
+                      <a href="about_company.html">合作企业</a>
+                  </div>
+              </div>
+          </aside>
+
+          <!-- The div with class "about_content" is the part that includes texts as well as
+        images on the right side of the div "box". -->
+          <div class="about_content">
+            <div class="about_subtitle">合作院校</div>
+            <div class="row_comp">
+              <img src="img/about/campus/jg.jpg" alt="" class="image_comp_2">
+              <img src="img/about/campus/gh.jpeg" alt="" class="image_comp_2">
+            </div>
+            <div class="about_subtitle">骨干培养计划学校</div>
+            <div class="row_comp_3">
+              <img src="img/about/campus/rd.jpg" alt="" class="image_comp_3">
+              <img src="img/about/campus/dw.jpg" alt="" class="image_comp_3">
+              <img src="img/about/campus/wgy.jpg" alt="" class="image_comp_3">
+            </div>
+            <div class="row_comp">
+              <img src="img/about/campus/cd.jpg" alt="" class="image_comp_2">
+              <img src="img/about/campus/sf.jpg" alt="" class="image_comp_2">
+            </div>
+          </div>
+        </div>
+    </main>
+
+  <!-- Footer -->
+  <footer class="page_footer">
+      <div>
+          <div class="footer_menu">
+            <ul>
+                <li>
+                    <a href="homepage.html">· SEO首页</a>
+                </li>
+                <li>
+                    <a href="about.html">· 关于我们</a>
+                </li>
+                <li>
+                    <a href="programs.html">· SEO风采</a>
+                </li>
+                <li>
+                    <a href="news.html">· 新闻中心</a>
+                </li>
+                <li>
+                    <a href="participate.html">· 参与SEO</a>
+                </li>
+            </ul>
+          </div>
+
+          <!--The "footer_email" div contains the email address of SEO.-->
+          <div class="footer_email">
+              <span>联系我们:&nbsp;&nbsp;</span>
+              <a href="mailto:contact@seo-china.org" class="footer__email__link">
+                  <span class="ng-binding">seo-china@seo-china.org</span>
+              </a>
+          </div>
+
+          <!--The "footer_email" div contains the email address of SEO.-->
+          <div class="footer_wx">
+              <span>微信公众号:&nbsp;&nbsp;</span>
+                <span class="ng-binding">SEOChina2006</span>
+          </div>
+      </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="seoFunction.js"></script>
+</body>
+</html>
