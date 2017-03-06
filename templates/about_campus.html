@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 
-<!--
-Filename: about.html
-Created: Sep 25, 2016
-Author: V.L.
--->
-
 <html lang="zh-CN">
 
 <head>
-  <meta content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
-  <title>SEO中国主页</title>
-  <link rel="icon" type="image/jpg" href="../static/img/SEO_logo.jpg">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- link to css style sheet -->
-  <link rel="stylesheet" href="../static/css/seoStyle.css">
-  <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../static/css/eden.css">
-  <link rel="stylesheet" href="../static/css/styles.css">
+    <title>SEO中国主页</title>
+    <link rel="icon" type="image/jpg" href="../static/img/SEO_logo.jpg">
+
+    <!-- link to css style sheet -->
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/eden.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 
 <body>
+
 <nav id="top-nav" class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
         <div class="nav navbar-nav navbar-left navbar-header">
@@ -29,7 +25,7 @@ Author: V.L.
                 <img src="../static/img/SEO_logo.png" style="height: 50px; width: 50px;">
             </a>
         </div>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right text-center">
             <li><a href="homepage.html">首页</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -38,6 +34,7 @@ Author: V.L.
                     <li><a href="about.html">项目介绍</a></li>
                     <li><a href="about_people.html">团队成员</a></li>
                     <li><a href="about_campus.html">校园网络</a></li>
+                    <!--<li role="separator" class="divider"></li>-->
                     <li><a href="about_company.html">合作企业</a></li>
                 </ul>
             </li>
@@ -47,102 +44,99 @@ Author: V.L.
         </ul>
     </div>
 </nav>
-  <main>
-    <!-- The first div "page_header" is includes the div "navigationbar" to provide
-    a black background for the header part, and set the header in an absolute position in the page.-->
-      <!-- Following the nav bar is the div that contains a <h1> element that introduces
-    the main purpose of this page.-->
-      <div class="about_title">
-        <h1>校园网络</h1>
-      </div>
 
-      <!-- Following the <h1> "about_title" section, the following "center" div contains
-      the main content that offers explanations to the purpose of the website.-->
-
-        <!-- the div with class "box" contains the submenu on the left of the page
-        ,and texts as well as images on the right-->
-        <div class="box_campus">
-
-          <!--The "left_menu" aside contains a submenu on the right that directs people
-        to two sections of the "About Us" page: "about.html" and "about_people.html"-->
-          <aside class="left_menu">
-              <div>
-                  <div class="menu_item">
-                      <a href="about.html">项目介绍</a>
-                  </div>
-                  <div class="menu_item">
-                      <a href="about_people.html">团队成员</a>
-                  </div>
-                  <div class="menu_item">
-                      <a href="about_campus.html">校园网络</a>
-                  </div>
-                  <div class="menu_item">
-                      <a href="about_company.html">合作企业</a>
-                  </div>
-              </div>
-          </aside>
-
-          <!-- The div with class "about_content" is the part that includes texts as well as
-        images on the right side of the div "box". -->
-          <div class="about_content">
-            <div class="about_subtitle">合作院校</div>
-            <div class="row_comp">
-              <img src="../static/img/about/campus/jg.jpg" alt="" class="image_comp_2">
-              <img src="../static/img/about/campus/gh.jpeg" alt="" class="image_comp_2">
-            </div>
-            <div class="about_subtitle">骨干培养计划学校</div>
-            <div class="row_comp_3">
-              <img src="../static/img/about/campus/rd.jpg" alt="" class="image_comp_3">
-              <img src="../static/img/about/campus/dw.jpg" alt="" class="image_comp_3">
-              <img src="../static/img/about/campus/wgy.jpg" alt="" class="image_comp_3">
-            </div>
-            <div class="row_comp">
-              <img src="../static/img/about/campus/cd.jpg" alt="" class="image_comp_2">
-              <img src="../static/img/about/campus/sf.jpg" alt="" class="image_comp_2">
-            </div>
-          </div>
+<div class="container-fluid">
+    <div class="col-md-2 text-center about-nav">
+        <div class="row">
+            <h3 class="col-md-12">关于我们</h3>
         </div>
-    </main>
-
-  <!-- Footer -->
-  <footer class="page_footer">
-      <div>
-          <div class="footer_menu">
-            <ul>
-                <li>
-                    <a href="homepage.html">· SEO首页</a>
-                </li>
-                <li>
-                    <a href="about.html">· 关于我们</a>
-                </li>
-                <li>
-                    <a href="programs.html">· SEO风采</a>
-                </li>
-                <li>
-                    <a href="news.html">· 新闻中心</a>
-                </li>
-                <li>
-                    <a href="participate.html">· 参与SEO</a>
-                </li>
+        <div class="row">
+            <!--<div class="clearfix hidden-xs" style="height: 90px;"></div>-->
+            <ul class="hidden-sm nav nav-pills nav-stacked">
+                <li role="presentation"><a href="about.html">项目介绍</a></li>
+                <li role="presentation"><a href="about_people.html">团队成员</a></li>
+                <li role="presentation" class="active"><a href="#">校园网络</a></li>
+                <li role="presentation"><a href="about_company.html">合作企业</a></li>
             </ul>
-          </div>
 
-          <!--The "footer_email" div contains the email address of SEO.-->
-          <div class="footer_email">
-              <span>联系我们:&nbsp;&nbsp;</span>
-              <a href="mailto:contact@seo-china.org" class="footer__email__link">
-                  <span class="ng-binding">seo-china@seo-china.org</span>
-              </a>
-          </div>
+            <ul class="visible-sm nav nav-pills nav-justified">
+                <li role="presentation"><a href="about.html">项目介绍</a></li>
+                <li role="presentation"><a href="about_people.html">团队成员</a></li>
+                <li role="presentation" class="active"><a href="#">校园网络</a></li>
+                <li role="presentation"><a href="about_company.html">合作企业</a></li>
+            </ul>
+        </div>
+    </div>
 
-          <!--The "footer_email" div contains the email address of SEO.-->
-          <div class="footer_wx">
-              <span>微信公众号:&nbsp;&nbsp;</span>
-                <span class="ng-binding">SEOChina2006</span>
-          </div>
-      </div>
-  </footer>
+    <div class="col-md-9 container-fluid about-content">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>校园网络</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3 class="col-md-12">合作院校</h3>
+        </div>
+        <div class="row">
+            <img class="col-sm-6 col-xs-6" src="../static/img/about/campus/jg.jpg" alt="清华经管学院">
+            <img class="col-sm-6 col-xs-6" src="../static/img/about/campus/gh.jpeg" alt="光华管理学院">
+        </div>
+        <div class="row">
+            <h3 class="col-md-12">骨干培养计划学校</h3>
+        </div>
+        <div class="hidden-xs">
+            <div class="row">
+                <img class="col-sm-4" src="../static/img/about/campus/rd.jpg" alt="中国人民大学">
+                <img class="col-sm-4" src="../static/img/about/campus/dw.jpg" alt="对外经济贸易大学">
+                <img class="col-sm-4" src="../static/img/about/campus/wgy.jpg" alt="北京外国语大学">
+            </div>
+            <div class="row">
+                <img class="col-sm-4 col-sm-offset-2" src="../static/img/about/campus/cd.jpg" alt="中央财经大学">
+                <img class="col-sm-4 col-sm-offset-1" src="../static/img/about/campus/sf.jpg" alt="北京师范大学">
+            </div>
+        </div>
+        <div class="visible-xs">
+            <div class="row">
+                <img class="col-xs-6" src="../static/img/about/campus/rd.jpg" alt="中国人民大学">
+                <img class="col-xs-6" src="../static/img/about/campus/dw.jpg" alt="对外经济贸易大学">
+                <img class="col-xs-6" src="../static/img/about/campus/wgy.jpg" alt="北京外国语大学">
+                <img class="col-xs-6" src="../static/img/about/campus/cd.jpg" alt="中央财经大学">
+                <img class="col-xs-6" src="../static/img/about/campus/sf.jpg" alt="北京师范大学">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div>
+        <a href="homepage.html">SEO首页</a>
+        &nbsp;|&nbsp;
+        <a href="about.html">关于我们</a>
+        &nbsp;|&nbsp;
+        <a href="programs.html">SEO风采</a>
+        &nbsp;|&nbsp;
+        <a href="news.html">新闻中心</a>
+        &nbsp;|&nbsp;
+        <a href="participate.html">参与SEO</a>
+    </div>
+    <br/>
+    <div>
+        <span>联系我们：</span>
+        <a href="mailto:contact@seo-china.org">
+            <span>seo-china@seo-china.org</span>
+        </a>
+    </div>
+
+    <div>
+        <span>微信公众号：</span>
+        <span>SEOChina2006</span>
+    </div>
+</footer>
+
 <script src="../static/js/jquery-2.1.1.js"></script>
 <script src="../static/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
