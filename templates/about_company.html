@@ -12,60 +12,44 @@ Author: V.L.
   <meta content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <title>SEO中国主页</title>
-  <link rel="icon" type="image/jpg" href="img/SEO_logo.jpg">
+  <link rel="icon" type="image/jpg" href="../static/img/SEO_logo.jpg">
 
   <!-- link to css style sheet -->
-  <link rel="stylesheet" href="seoStyle.css">
+  <link rel="stylesheet" href="../static/css/seoStyle.css">
+  <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/eden.css">
+  <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 
 <body>
+<nav id="top-nav" class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <div class="nav navbar-nav navbar-left navbar-header">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="../static/img/SEO_logo.png" style="height: 50px; width: 50px;">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="homepage.html">首页</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">关于我们<span class="caret"></span></a>
+                <ul class="dropdown-menu text-center">
+                    <li><a href="about.html">项目介绍</a></li>
+                    <li><a href="about_people.html">团队成员</a></li>
+                    <li><a href="about_campus.html">校园网络</a></li>
+                    <li><a href="about_company.html">合作企业</a></li>
+                </ul>
+            </li>
+            <li><a href="programs.html">SEO风采</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li><a href="participate.html">参与SEO</a></li>
+        </ul>
+    </div>
+</nav>
   <main>
     <!-- The first div "page_header" is includes the div "navigationbar" to provide
     a black background for the header part, and set the header in an absolute position in the page.-->
-    <div class="page_header">
-      <!-- The div "navigationbar" inside of "page_header" contains texts and links of five components,
-      including "About Us","Programs","Application", "Donate" and a SEO China
-      logo that directs visitors back to home page. We need this div inside of "page_header"
-      in order to set a relative position of the nav bar in the css document.-->
-      <nav class="navigationbar">
-        <ul class="ul_container">
-            <li class="navitem" id="main_menu">
-                <a href="homepage.html">
-                    首页
-                </a>
-            </li>
-            <li class="navitem dropdown" id="about_menu">
-              <a href="javascript:void(0)" class="dropbtn" onclick="dropDownMenu()">关于我们</a>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="about.html">项目介绍</a>
-                <a href="about_people.html">团队成员</a>
-                <a href="about_campus.html">校园网络</a>
-                <a href="about_company.html">合作企业</a>
-              </div>
-            </li>
-            <li class="navitem" id="programs_menu">
-                <a href="programs.html">
-                    SEO风采
-                </a>
-            </li>
-            <li class="navitem" id="news_menu">
-                <a href="news.html">
-                    新闻中心
-                </a>
-            </li>
-            <li class="navitem" id="participate_menu">
-                <a href="participate.html">
-                    参与SEO
-                </a>
-            </li>
-            <li class="navimage">
-                <a href="homepage.html">
-                    <img src="img/SEO_logo.jpg">
-                </a>
-            </li>
-          </ul>
-      </nav>
-    </div>
 
       <!-- Following the nav bar is the div that contains a <h1> element that introduces
     the main purpose of this page.-->
@@ -103,17 +87,17 @@ Author: V.L.
         images on the right side of the div "box". -->
           <div class="about_content">
             <div class="row_cmp_3">
-              <img src="img/about/company/ms.jpg" alt="" class="image_comp_3">
-              <img src="img/about/company/gb.jpg" alt="" class="image_comp_3">
-              <img src="img/about/company/svb.jpg" alt="" class="image_comp_3">
+              <img src="../static/img/about/company/ms.jpg" alt="" class="image_comp_3">
+              <img src="../static/img/about/company/gb.jpg" alt="" class="image_comp_3">
+              <img src="../static/img/about/company/svb.jpg" alt="" class="image_comp_3">
             </div>
             <div class="row_cmp_3">
-              <img src="img/about/company/sh.jpg" alt="" class="image_comp_3">
-              <img src="img/about/company/ty.jpg" alt="" class="image_comp_3">
-              <img src="img/about/company/nw.jpg" alt="" class="image_comp_3">
+              <img src="../static/img/about/company/sh.jpg" alt="" class="image_comp_3">
+              <img src="../static/img/about/company/ty.jpg" alt="" class="image_comp_3">
+              <img src="../static/img/about/company/nw.jpg" alt="" class="image_comp_3">
             </div>
             <div class="row_cmp_3">
-              <img src="img/about/company/mins.jpg" alt="" class="image_comp_3">
+              <img src="../static/img/about/company/mins.jpg" alt="" class="image_comp_3">
             </div>
           </div>
         </div>
@@ -157,7 +141,7 @@ Author: V.L.
           </div>
       </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="seoFunction.js"></script>
+<script src="../static/js/jquery-2.1.1.js"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

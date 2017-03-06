@@ -12,61 +12,42 @@ Author: V.L.
   <meta content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <title>SEO中国主页</title>
-  <link rel="icon" type="image/jpg" href="img/SEO_logo.jpg">
+  <link rel="icon" type="image/jpg" href="../img/SEO_logo.jpg">
 
   <!-- link to css style sheet -->
-  <link rel="stylesheet" href="seoStyle.css">
+  <link rel="stylesheet" href="../static/css/seoStyle.css">
+  <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/css/eden.css">
+  <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 
 <body>
-  <main>
-    <!-- The first div "page_header" is includes the div "navigationbar" to provide
-    a black background for the header part, and set the header in an absolute position in the page.-->
-    <div class="page_header">
-      <!-- The div "navigationbar" inside of "page_header" contains texts and links of five components,
-      including "About Us","Programs","Application", "Donate" and a SEO China
-      logo that directs visitors back to home page. We need this div inside of "page_header"
-      in order to set a relative position of the nav bar in the css document.-->
-      <nav class="navigationbar">
-        <ul class="ul_container">
-            <li class="navitem" id="main_menu">
-                <a href="homepage.html">
-                    首页
-                </a>
+<nav id="top-nav" class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <div class="nav navbar-nav navbar-left navbar-header">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="../static/img/SEO_logo.png" style="height: 50px; width: 50px;">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="homepage.html">首页</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">关于我们<span class="caret"></span></a>
+                <ul class="dropdown-menu text-center">
+                    <li><a href="about.html">项目介绍</a></li>
+                    <li><a href="about_people.html">团队成员</a></li>
+                    <li><a href="about_campus.html">校园网络</a></li>
+                    <li><a href="about_company.html">合作企业</a></li>
+                </ul>
             </li>
-            <li class="navitem dropdown" id="about_menu">
-              <a href="javascript:void(0)" class="dropbtn" onclick="dropDownMenu()">关于我们</a>
-              <div class="dropdown-content" id="myDropdown">
-                <a href="about.html">项目介绍</a>
-                <a href="about_people.html">团队成员</a>
-                <a href="about_campus.html">校园网络</a>
-                <a href="about_company.html">合作企业</a>
-              </div>
-            </li>
-            <li class="navitem" id="programs_menu">
-                <a href="programs.html">
-                    SEO风采
-                </a>
-            </li>
-            <li class="navitem" id="news_menu">
-                <a href="news.html">
-                    新闻中心
-                </a>
-            </li>
-            <li class="navitem" id="participate_menu">
-                <a href="participate.html">
-                    参与SEO
-                </a>
-            </li>
-            <li class="navimage">
-                <a href="homepage.html">
-                    <img src="img/SEO_logo.jpg">
-                </a>
-            </li>
-          </ul>
-      </nav>
+            <li><a href="programs.html">SEO风采</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li><a href="participate.html">参与SEO</a></li>
+        </ul>
     </div>
-
+</nav>
+  <main>
       <!--The "program_graph" section, first part of the main content section,
       will be some images about general logistics of the program to aid the understanding of it.-->
       <section class="program_graph">
@@ -78,7 +59,7 @@ Author: V.L.
           <!--The following div contains images and explanatory texts along with them.-->
           <div id="graphs">
               <div id="map">
-                  <img src="img/programs/map.jpg" alt="">
+                  <img src="../static/img/programs/map.jpg" alt="">
               </div>
           </div>
       </section>
@@ -92,25 +73,25 @@ Author: V.L.
 
         <div class="row_person_4">
           <div class="person_all">
-            <img src="img/programs/1.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/1.jpg" alt="" class="image_center"> 
             <div class="person_desc">陈驰</div> 
             <div class="person_desc">康颐(北京)养老服务有限公司</div>
             <div class="person_desc">董事长兼合伙人</div>               
           </div>
           <div class="person_all">
-            <img src="img/programs/2.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/2.jpg" alt="" class="image_center"> 
             <div class="person_desc">胡琼</div> 
             <div class="person_desc">光大实业资本管理有限公司</div>
             <div class="person_desc">总经理助理</div>               
           </div>
           <div class="person_all">
-            <img src="img/programs/3.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/3.jpg" alt="" class="image_center"> 
             <div class="person_desc">金梦</div> 
             <div class="person_desc">瑞士瑞信银行香港办公室</div>   
             <div class="person_desc">副总裁</div>            
           </div>
           <div class="person_all">
-            <img src="img/programs/4.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/4.jpg" alt="" class="image_center"> 
             <div class="person_desc">逯慧敏</div> 
             <div class="person_desc">微软</div>
             <div class="person_desc">战略经理</div>               
@@ -118,25 +99,25 @@ Author: V.L.
         </div>
         <div class="row_person_4">
           <div class="person_all">
-            <img src="img/programs/5.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/5.jpg" alt="" class="image_center"> 
             <div class="person_desc">黎路</div> 
             <div class="person_desc">春华资本集团</div>
             <div class="person_desc">投资经理</div>               
           </div>
           <div class="person_all">
-            <img src="img/programs/6.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/6.jpg" alt="" class="image_center"> 
             <div class="person_desc">刘毅</div> 
             <div class="person_desc">上海天地人和创业投资有限公司</div>
             <div class="person_desc">副总裁，投资决策委员会委员</div>               
           </div>
           <div class="person_all">
-            <img src="img/programs/7.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/7.jpg" alt="" class="image_center"> 
             <div class="person_desc">王雨希</div> 
             <div class="person_desc">淡马锡北京办公室</div>   
             <div class="person_desc">副总裁</div>            
           </div>
           <div class="person_all">
-            <img src="img/programs/8.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/8.jpg" alt="" class="image_center"> 
             <div class="person_desc">许之令</div> 
             <div class="person_desc">美银美林香港办公室</div>
             <div class="person_desc">环球资本市场部分析师</div>               
@@ -144,19 +125,19 @@ Author: V.L.
         </div>
         <div class="row_person_4">
           <div class="person_all">
-            <img src="img/programs/9.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/9.jpg" alt="" class="image_center"> 
             <div class="person_desc">姚夏圯</div> 
             <div class="person_desc">永柏投资管理有限公司</div>
             <div class="person_desc">投资经理</div>               
           </div>
           <div class="person_all">
-            <img src="img/programs/10.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/10.jpg" alt="" class="image_center"> 
             <div class="person_desc">王缀</div> 
             <div class="person_desc">世邦魏理仕</div>
             <div class="person_desc">企业发展部分析员</div>               
           </div>
           <div class="person_all">
-            <img src="img/programs/11.jpg" alt="" class="image_center"> 
+            <img src="../static/img/programs/11.jpg" alt="" class="image_center"> 
             <div class="person_desc">刘莹</div> 
             <div class="person_desc">北京春雨天下软件有限公司</div>   
             <div class="person_desc">助理CFO</div>            
@@ -205,7 +186,7 @@ Author: V.L.
           </div>
       </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-  <script src="seoFunction.js"></script>
+<script src="../static/js/jquery-2.1.1.js"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
