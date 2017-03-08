@@ -35,7 +35,7 @@ def about_campus():
 def about_company():
 	return render_template('about_company.html')
 
-@app.rote('/about_people.html')
+@app.route('/about_people.html')
 def about_people():
 	return render_template('about_people.html')
 
