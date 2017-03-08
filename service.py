@@ -13,7 +13,7 @@ def index():
 
 @app.route('/<path:path>')
 def static_file(path):
-    return app.send_static_file(path)
+    return app.send_static_file('/templates/' + path)
 
 # @app.route('/news.html')
 # def news():
