@@ -1,53 +1,17 @@
-<!DOCTYPE html>
+{% extends 'template.html' %}
 
-<html lang="zh-CN">
+{% block title %}
+SEO中国主页
+{% endblock %}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>SEO中国主页</title>
-    <link rel="icon" type="image/jpg" href="../static/img/SEO_logo.jpg">
-
-    <!-- link to css style sheet -->
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/css/eden.css">
-    <link rel="stylesheet" href="../static/css/styles.css">
-</head>
-
-<body>
-
-<nav id="top-nav" class="navbar navbar-default navbar-static-top">
-    <div class="container-fluid">
-        <div class="nav navbar-nav navbar-left navbar-header">
-            <a class="navbar-brand" href="homepage.html">
-                <img src="../static/img/SEO_logo.png" style="height: 50px; width: 50px;">
-            </a>
-        </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="homepage.html">首页</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                   aria-expanded="false">关于我们<span class="caret"></span></a>
-                <ul class="dropdown-menu text-center">
-                    <li><a href="about.html">项目介绍</a></li>
-                    <li><a href="about_people.html">团队成员</a></li>
-                    <li><a href="about_campus.html">校园网络</a></li>
-                    <li><a href="about_company.html">合作企业</a></li>
-                </ul>
-            </li>
-            <li><a href="programs.html">SEO风采</a></li>
-            <li><a href="news.html">新闻中心</a></li>
-            <li><a href="participate.html">参与SEO</a></li>
-        </ul>
-    </div>
-</nav>
+{% block content %}
 
 <div class="hero">
     <div class="container-fluid title-text">
         <h1>SEO China</h1>
-        <p>SEO中国成立于2006年，旨在通过系统的职业技能和领导力培训，和与富有社会责任感的企业紧密合作，消除在大学生成长过程中由于社会资本分配不均带来的机会不平等，让所有大学生能最大限度发挥其潜质，从而激发中国青年群体的上进心和社会责任感，促进社会流动性。</p>
+        <p>SEO中国成立于2006年，旨在通过系统的职业技能和领导力培训，和与富有社会责任感的企业紧密合作，
+            消除在大学生成长过程中由于社会资本分配不均带来的机会不平等，让所有大学生能最大限度发挥其潜质，
+            从而激发中国青年群体的上进心和社会责任感，促进社会流动性。</p>
     </div>
 </div>
 
@@ -95,8 +59,7 @@
                     </div>
                 </li>
             </ul>
-            <a class="pull-right" href="news.html">更多新闻<span style="margin-left: 3px;"
-                                                             class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="pull-right" href="news.html">更多新闻&nbsp;<span class="glyphicon glyphicon-chevron-right"></span></a>
         </div>
         <div class="col-md-6">
             <div class="page-header">
@@ -114,35 +77,4 @@
     </div>
 </div>
 
-<!-- Footer -->
-<footer class="text-center">
-    <div>
-        <a href="homepage.html">SEO首页</a>
-        &nbsp;|&nbsp;
-        <a href="about.html">关于我们</a>
-        &nbsp;|&nbsp;
-        <a href="programs.html">SEO风采</a>
-        &nbsp;|&nbsp;
-        <a href="news.html">新闻中心</a>
-        &nbsp;|&nbsp;
-        <a href="participate.html">参与SEO</a>
-    </div>
-    <br/>
-    <div>
-        <span>联系我们：</span>
-        <a href="mailto:contact@seo-china.org">
-            <span>seo-china@seo-china.org</span>
-        </a>
-    </div>
-
-    <div>
-        <span>微信公众号：</span>
-        <span>SEOChina2006</span>
-    </div>
-</footer>
-
-<script src="../static/js/jquery-2.1.1.js"></script>
-<script src="../static/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+{% endblock %}

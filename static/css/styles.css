@@ -1,4 +1,8 @@
 
+img {
+    max-width: 100%;
+}
+
 .navbar-brand {
     padding: 0 0 0 15px;
     margin: 0;
@@ -52,7 +56,8 @@ footer {
     font-weight: lighter;
     width: 50vw;
     color: #efefef;
-    margin-top: calc(50vh - 300px);
+    margin-top: 350px;
+    margin-top: calc(50vh - 320px);
     text-shadow: 1px 1px 3px #666;
 }
 
@@ -119,6 +124,7 @@ footer {
     .title-text {
         padding: 0;
         text-align: center;
+        margin-top: -50px;
     }
 
     .title-text > h1 {
@@ -129,5 +135,67 @@ footer {
         font-size: 12pt;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+.people-list {
+    text-align: center;
+}
+
+.aspect-ratio-wrapper {
+    position: relative;
+    padding-bottom: 150%;
+}
+
+@media screen and (max-width: 500px) {
+    .aspect-ratio-wrapper {
+        padding-bottom: 175%;
+    }
+}
+
+.aspect-ratio-wrapper > .wrapper-content {
+    position: absolute;
+    /*top: 0;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.people-list img {
+    width: 70%;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+.divider {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+th {
+    text-align: center;
+    min-width: 90px;
+    max-width: 200px;
+}
+
+tbody td > ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+tbody tr > td:first-child {
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 767px) {
+    .table-responsive td:nth-child(2),
+    .table-responsive th:nth-child(2),
+    .table-responsive td:nth-child(3),
+    .table-responsive th:nth-child(3){
+        max-width: 300px !important;
+        min-width: 200px !important;
+        white-space: normal !important;
     }
 }

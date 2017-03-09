@@ -1,86 +1,87 @@
-<!DOCTYPE html>
+{% extends 'template.html' %}
 
-<html lang="zh-CN">
+{% block title %}
+    SEO中国 - 关于我们
+{% endblock %}
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% block content %}
 
-    <title>SEO中国主页</title>
-    <link rel="icon" type="image/jpg" href="../static/img/SEO_logo.jpg">
-
-    <!-- link to css style sheet -->
-    <link rel="stylesheet" href="../static/css/seoStyle.css">
-    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../static/css/eden.css">
-    <link rel="stylesheet" href="../static/css/styles.css">
-</head>
-
-<body>
-
-<nav id="top-nav" class="navbar navbar-default navbar-static-top">
     <div class="container-fluid">
-        <div class="nav navbar-nav navbar-left navbar-header">
-            <a class="navbar-brand" href="homepage.html">
-                <img src="../static/img/SEO_logo.png" style="height: 50px; width: 50px;">
-            </a>
+        <div class="row" style="margin-bottom: 20px;">
+            <h1>参与SEO</h1>
         </div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="homepage.html">首页</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                   aria-expanded="false">关于我们<span class="caret"></span></a>
-                <ul class="dropdown-menu text-center">
-                    <li><a href="about.html">项目介绍</a></li>
-                    <li><a href="about_people.html">团队成员</a></li>
-                    <li><a href="about_campus.html">校园网络</a></li>
-                    <li><a href="about_company.html">合作企业</a></li>
-                </ul>
-            </li>
-            <li><a href="programs.html">SEO风采</a></li>
-            <li><a href="news.html">新闻中心</a></li>
-            <li><a href="participate.html">参与SEO</a></li>
-        </ul>
+
+        <div class="col-md-8 col-md-offset-2 table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>合作模式</th>
+                    <th>对合作方的价值</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><b>职场精英/<br>培训机构</b></td>
+                    <td>
+                        <ul>
+                            <li>成为SEO学员的导师</li>
+                            <li>参与SEO培训的课程</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>收获帮助和陪伴学员成长的过程和体验</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>学生社团/<br>职发中心</b></td>
+                    <td>
+                        <ul>
+                            <li>加入SEO“骨干培养”计划，选拔校内骨干参加SEO的培训导师项目，并完成其元校内对目标大学生的培训</li>
+                            <li>协助SEO及SEO合作企业开展校园活动</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>提高职业发展社团的水平和标准，参与更系统化的职业技能和领导力培训，对接更多宝贵社会资源</li>
+                            <li>补充学校职业发展中心已有项目和资源，更好帮助学生就业</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>合作企业</b></td>
+                    <td>
+                        <ul>
+                            <li>为SEO学员提供实习岗位，帮助SEO学员在实践中成长</li>
+                            <li>SEO可按企业需求协助完成实习生招募、筛选工作</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>减少企业人力投入（如：举办校园宣讲会、组织面试等）</li>
+                            <li>获得优秀、踏实、肯干的人才储备</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>赞助企业/<br>个人</b></td>
+                    <td>
+                        <ul>
+                            <li>为SEO发展提供资金支持</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>扩大企业影响力</li>
+                            <li>为消除社会资本分配不均、机会不平等贡献一份力量</li>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</nav>
 
-<main>
-    <div>
-        <img src="../static/img/app/m.png" alt="" class="app_img_center">
-    </div>
-
-</main>
-
-<!-- Footer -->
-<footer class="text-center">
-    <div>
-        <a href="homepage.html">SEO首页</a>
-        &nbsp;|&nbsp;
-        <a href="about.html">关于我们</a>
-        &nbsp;|&nbsp;
-        <a href="programs.html">SEO风采</a>
-        &nbsp;|&nbsp;
-        <a href="news.html">新闻中心</a>
-        &nbsp;|&nbsp;
-        <a href="participate.html">参与SEO</a>
-    </div>
-    <br/>
-    <div>
-        <span>联系我们：</span>
-        <a href="mailto:contact@seo-china.org">
-            <span>seo-china@seo-china.org</span>
-        </a>
-    </div>
-
-    <div>
-        <span>微信公众号：</span>
-        <span>SEOChina2006</span>
-    </div>
-</footer>
-
-<script src="../static/js/jquery-2.1.1.js"></script>
-<script src="../static/bootstrap/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+{% endblock %}
