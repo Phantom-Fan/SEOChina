@@ -5,7 +5,7 @@ from flask import Flask, request, session, render_template
 
 app = Flask(__name__)
 app_root = app.root_path
-app.config['DEBUG'] = True
+app.config['DEBUG'] = False
 
 
 @app.route('/')
@@ -58,4 +58,4 @@ def about_people():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+    app.run(host='0.0.0.0', port=80)
