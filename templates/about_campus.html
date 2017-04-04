@@ -1,10 +1,48 @@
-{% extends 'template.html' %}
+<!DOCTYPE html>
 
-{% block title %}
-    SEO中国 - 关于我们
-{% endblock %}
+<html lang="zh-CN">
 
-{% block content %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SEO中国 - 关于我们</title>
+    <link rel="icon" type="image/jpg" href="../static/img/SEO_logo.jpg">
+
+    <!-- link to css style sheet -->
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/eden.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+
+<nav id="top-nav" class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <div class="nav navbar-nav navbar-left navbar-header">
+            <a class="navbar-brand" href="homepage.html">
+                <img src="../static/img/SEO_logo.png" style="height: 50px; width: 50px;">
+            </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="homepage.html">首页</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">关于我们<span class="caret"></span></a>
+                <ul class="dropdown-menu text-center">
+                    <li><a href="about.html">项目介绍</a></li>
+                    <li><a href="about_people.html">团队成员</a></li>
+                    <li><a href="about_campus.html">校园网络</a></li>
+                    <li><a href="about_company.html">合作企业</a></li>
+                </ul>
+            </li>
+            <li><a href="programs.html">SEO风采</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li><a href="participate.html">参与SEO</a></li>
+        </ul>
+    </div>
+</nav>
 
 <div class="container-fluid">
     <div class="col-md-2 text-center about-nav">
@@ -69,4 +107,35 @@
     </div>
 </div>
 
-{% endblock %}
+<!-- Footer -->
+<footer class="text-center">
+    <div>
+        <a href="homepage.html">SEO首页</a>
+        &nbsp;|&nbsp;
+        <a href="about.html">关于我们</a>
+        &nbsp;|&nbsp;
+        <a href="programs.html">SEO风采</a>
+        &nbsp;|&nbsp;
+        <a href="news.html">新闻中心</a>
+        &nbsp;|&nbsp;
+        <a href="participate.html">参与SEO</a>
+    </div>
+    <br/>
+    <div>
+        <span>联系我们：</span>
+        <a href="mailto:contact@seo-china.org">
+            <span>seo-china@seo-china.org</span>
+        </a>
+    </div>
+
+    <div>
+        <span>微信公众号：</span>
+        <span>SEOChina2006</span>
+    </div>
+</footer>
+
+<script src="../static/js/jquery-2.1.1.js"></script>
+<script src="../static/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
